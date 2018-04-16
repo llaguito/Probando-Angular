@@ -1,0 +1,13 @@
+<nav>
+    <ul>
+        <li *ngFor="let option of options">
+            <a href="{{option.url}}">{{option.name}}</a>
+        </li>
+        <li>
+            <input [(ngModel)]="send" type="text">
+        </li>
+        <li>
+            {{send}}
+        </li>
+    </ul>
+</nav>
