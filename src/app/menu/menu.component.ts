@@ -1,4 +1,6 @@
 import { Component, OnInit, Input, Output } from '@angular/core';
+import { Menu } from '../menu';
+import { MENU } from '../list-menu';
 
 @Component({
   selector: 'app-menu',
@@ -7,6 +9,7 @@ import { Component, OnInit, Input, Output } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
   @Input() send: string;
+  options: Menu[] = MENU;
 
   constructor() { }
 
